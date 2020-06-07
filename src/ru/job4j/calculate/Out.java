@@ -1,8 +1,7 @@
 package ru.job4j.calculate;
 
 public class Out {
-
-    public static void main (String[] args) {
+      public static void main(String[] args) {
 
         String lirics = "Вот какой рассеянный";
         System.out.println(lirics);
