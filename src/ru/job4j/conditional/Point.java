@@ -5,9 +5,7 @@ public class Point {
 
         double calc = Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2);
 
-        calc = Math.sqrt(calc);
-
-        return calc;
+        return Math.sqrt(calc);
 
     }
 
