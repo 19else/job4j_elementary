@@ -1,6 +1,7 @@
 package ru.job4j.calculate;
 
 import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 
@@ -24,7 +25,6 @@ import org.junit.Test;
         /* Результат вычисления - всегда одна переменная */
 
         /*Сравнение полученного значения с ожидаемым */
-
         assertThat(result, is(expected));
     }
 
