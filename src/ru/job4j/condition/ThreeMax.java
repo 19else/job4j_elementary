@@ -17,5 +17,4 @@ public class ThreeMax {
         System.out.println(result);
     }
 
-
 }
