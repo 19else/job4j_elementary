@@ -1,27 +1,40 @@
 package ru.job4j.loop;
 
 public class Mortgage {
+
      public int year(int amount, int salary, double percent) {
+
          int year = 0;
-         double sum = 0;
+         percent = 1.0 + percent / 100;
+         double sum;
+         sum = (amount * percent) - salary;
+          if (sum > 0) {
+             year = 1;
 
              do {
+                 // Начисление процентов банком
+                 sum *= percent;
+                 System.out.println("Начисление банку %  = " + sum);
 
-                 //Кредитная задолжность за 1 год Это вычисление надо сделать один раз.
-                 // но если его вынести за do то sum правильно использовать не смогу? Ввести еще одну переменную?
-                 // тогда лучше включить условие if для случаев погашения в первый год...
-                 sum = amount * (percent / 100) + amount - salary;
-                 year += 1;
+                 //мы оплатили банку
+                 sum -= salary;
+                 System.out.println(" Мы оплатили банку = " + sum);
 
-                 // кредит.задолжн. за 2 год - это повторение, которое нужно включить цикл?
-                 sum = sum + sum * (percent / 100) - salary;
-                 year += 1;
+                 // период 1 год
+                 year++;
 
+                 System.out.println("Прибавили год счетчику " + year);
 
-             } while (sum <= 0);
+             } while (sum >= 0);
+
+         } else {
+             year++;
+         }
 
          return year;
-         }
+
+        }
+
      }
 
 
