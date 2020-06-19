@@ -10,7 +10,7 @@ public class FindLoopTest {
     @Test
     public void whenArrayHas5Then0() {
         int value = 5;
-        int[] input = new int[] {0, 1, 10, 5, 6};
+        int[] input = new int[] {0, 1, 2, 3, 5};
         int result = FindLoop.indexOf(input, value);
         int expect = 0;
         assertThat(result, is(expect));
