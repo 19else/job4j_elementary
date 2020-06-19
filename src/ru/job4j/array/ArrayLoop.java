@@ -13,6 +13,10 @@ public class ArrayLoop {
 
             System.out.println("five[" + index + "]=" + five[index]);
 
+            if (five[index] == 7) {
+                System.out.println(index);
+            }
+
         }
     }
 }

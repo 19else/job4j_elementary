@@ -6,8 +6,7 @@ public class FindLoop {
         for (int index = 0; index < data.length; index++) {
             if (data[index] == el) {
                 rst = index;
-                System.out.println("result = " + rst);
-                System.out.println("массив с индексом [index] = " + data[index]);
+
                 break;
             }
             
