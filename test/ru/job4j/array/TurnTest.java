@@ -23,4 +23,13 @@ public class TurnTest {
         int[] expect = new int[] {5, 4, 3, 2, 1};
         assertThat(result, is(expect));
     }
+
+    @Test
+    public void whenTurnArrayWithTwoOfElementsThenTurnedArray() {
+        Turn turner = new Turn();
+        int[] input = new int[] {0, 1};
+        int[] result = turner.back(input);
+        int[] expect = new int[] {1, 0};
+        assertThat(result, is(expect));
+    }
 }
