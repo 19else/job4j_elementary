@@ -22,4 +22,12 @@ public class CheckTest {
         assertThat(result, is(false));
     }
 
+    @Test
+    public void whenDataFalseIsLast() {
+        boolean[] input = new boolean[] {true, true, false};
+        boolean result = Check.mono(input);
+
+        assertThat(result, is(false));
+    }
+
 }
