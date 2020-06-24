@@ -8,9 +8,13 @@ public class Sequence {
         array[1][0] = 3;
         array[1][1] = 4;
         array[1][2] = 5;
-        array[2][0] = 6;
+        array[2][1] = 6;
         array[1][2] = 7;
         array[2][2] = 8;
-        array[2][3] = 9;
+        array[0][2] = 9;
+
+        System.out.println(array[0][0]);
+        System.out.println(array[1][2]);
+        System.out.println(array[0][2]);
     }
 }
