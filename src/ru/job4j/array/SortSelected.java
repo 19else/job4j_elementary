@@ -12,7 +12,7 @@ public class SortSelected {
              System.out.println("Index = " + index + " min = " + min + " indexOf = " + indexOf
                            + " data[" + indexOf + "]= " + min);
 
-          //   System.out.println("data[" + indexOf + "] = " + min);
+             //System.out.println("data[" + indexOf + "] = " + min);
 
          }
 
