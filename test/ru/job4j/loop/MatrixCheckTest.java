@@ -20,4 +20,15 @@ public class MatrixCheckTest {
         assertThat(result, is(true));
 
     }
+
+    @Test
+    public void whenMonoVertical() {
+        char[][] input = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+        };
+        boolean result = MatrixCheck.monoVertical(input, 2);
+        assertThat(result, is(true));
+    }
 }
