@@ -7,7 +7,7 @@ public class Defragment {
             /*переместить первую не null-ячейку. Нужен цикл */
             if (array[nullIndex] == null) {
 
-                for (int index = point; index < array.length; index++) {
+                for (int index = 0; index < array.length; index++) {
                     int notNull = index;
                     if (array[index] != null) {
 
