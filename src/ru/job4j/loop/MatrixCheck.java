@@ -51,5 +51,18 @@ public class MatrixCheck {
             }
             return result;
         }
+
+        public static boolean isWinDiagonal(char[][]board) {
+        boolean result = false;
+            char[] oneDim = extractDiagonal(board);
+            for (int index = 0; index < board.length; index++) {
+                if (oneDim[index] == 'X') {
+                    result = true;
+                    break;
+                }
+
+            }
+            return result;
+        }
     }
 
