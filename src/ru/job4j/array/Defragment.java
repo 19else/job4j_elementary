@@ -7,13 +7,14 @@ public class Defragment {
             /*переместить первую не null-ячейку. Нужен цикл */
             if (array[nullIndex] == null) {
 
-                for (int index = point; index < array.length; index++) {
+                for (int index = point + 1; index < array.length; index++) {
                     int notNull = index;
                     if (array[index] != null) {
 
                         String temp = array[point];
                         array[point] = array[notNull];
                         array[notNull] = temp;
+                        break;
                     }
 
                 }
@@ -22,7 +23,6 @@ public class Defragment {
         }
         return array;
     }
-
 
     public static void main(String[] args) {
         String[] input = {"I", null, "wanna", null, "be", null, "compressed"};
