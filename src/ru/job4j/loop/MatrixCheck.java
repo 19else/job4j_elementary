@@ -45,8 +45,6 @@ public class MatrixCheck {
                         break;
                     }
 
-                    result = true;
-
                 }
 
             }
@@ -58,12 +56,10 @@ public class MatrixCheck {
             char[] oneDim = extractDiagonal(board);
             for (int index = 0; index < board.length; index++) {
                 if (oneDim[index] == 'X') {
-                    if (monoVertical(board, index) || monoHorizontal(board, index)) {
+                  if (monoVertical(board, index) || monoHorizontal(board, index)) {
                         result = true;
                         break;
                     }
-
-                    result = true;
 
                 }
             }
