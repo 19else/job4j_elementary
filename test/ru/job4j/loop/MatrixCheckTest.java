@@ -93,7 +93,7 @@ public class MatrixCheckTest {
                 {' ', ' ', ' ', ' ', 'X'},
         };
         boolean result = MatrixCheck.isWin(input);
-        assertThat(result, is(true));
+        assertThat(result, is(false));
     }
 
     @Test
@@ -106,6 +106,6 @@ public class MatrixCheckTest {
                 {' ', ' ', ' ', ' ', 'X'},
         };
         boolean result = MatrixCheck.isWinDiagonal(input);
-        assertThat(result, is(true));
+        assertThat(result, is(false));
     }
 }
