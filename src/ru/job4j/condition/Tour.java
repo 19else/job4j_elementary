@@ -14,5 +14,4 @@ public class Tour {
         Tour.offer(true);
         Tour.offer(false);
     }
-
 }

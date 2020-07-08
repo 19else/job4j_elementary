@@ -9,13 +9,10 @@ public class Check {
                 result = false;
                 break;
             }
-
-            }
-
-        return result;
         }
-
-      }
+        return result;
+    }
+}
 
 
 

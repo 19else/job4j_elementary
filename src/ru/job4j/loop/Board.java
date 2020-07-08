@@ -10,7 +10,9 @@ public class Board {
                     System.out.print(" ");
                 }
             }
-            /* Добавляем перевод на новую строку */
+            /**
+             * Добавляем перевод на новую строку
+             * */
                 System.out.println();
             }
             }

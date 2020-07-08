@@ -10,7 +10,6 @@ public class SqNumber {
         int hold = 0;
         for (int index = 0; index <= n; index++) {
             hold += index;
-
             if (hold == n) {
                 System.out.println("Success " + hold);
                 break;
@@ -18,7 +17,6 @@ public class SqNumber {
                 System.out.println("Not possible " + n);
                 break;
             }
-
         }
     }
 }

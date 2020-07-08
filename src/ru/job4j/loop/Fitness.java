@@ -7,12 +7,10 @@ public class Fitness {
             ivan *= 3;
             nik *= 2;
             month = month + 1;
-
         } return month;
     }
 
     public static void main(String[] args) {
         System.out.println(Fitness.calc(90, 100) + " месяцев, которое необходимо Ивану, чтобы обогнать в тяге Николая");
-
     }
 }

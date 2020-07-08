@@ -16,5 +16,4 @@ public class ThreeMax {
         int result = ThreeMax.max(10, 5, 1);
         System.out.println(result);
     }
-
 }

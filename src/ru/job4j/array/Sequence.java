@@ -12,7 +12,6 @@ public class Sequence {
         array[1][2] = 7;
         array[2][2] = 8;
         array[0][2] = 9;
-
         System.out.println(array[0][0]);
         System.out.println(array[1][2]);
         System.out.println(array[0][2]);

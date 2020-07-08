@@ -10,7 +10,5 @@ public class StringEq {
         String yourName = "Sergey";
         boolean userHasAccess = StringEq.check(yourName);
         System.out.println(userHasAccess);
-
     }
-
 }
