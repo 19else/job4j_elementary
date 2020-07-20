@@ -46,17 +46,25 @@ public class Point {
         return sqrt(pow(that.x - this.x, 2) + (pow(that.y - this.y, 2) + (pow(that.z - this.z, 2))));
     }
 
+    public void info() {
+        System.out.println(String.format("Point [%s, %s]", this.x, this.y));
+
+    }
+
     public static void main(String[] args) {
         Point a = new Point(0, 0);
         Point b = new Point(0, 2);
         Point x = new Point(0, 0, 0);
         Point y = new Point(0, 0, 0);
         Point z = new Point(1, 1, 1);
+        Point first = new Point(0, 0, 0);
+        Point second = new Point(1, 1, 1);
+        double dist3d = first.distance3d(second);
         double dist = a.distance(b);
-        double temp = x.distance3d(y);
-        double dist3d = z.distance3d(y);
+     //   double temp = x.distance3d(y);
+     //   double dist3d = z.distance3d(y);
         System.out.println("dist = " + dist);
-        System.out.println("temp = " + temp);
+     //   System.out.println("temp = " + temp);
         System.out.println("dist3d = " + dist3d);
     }
 
