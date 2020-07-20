@@ -18,7 +18,7 @@ public class Max {
     public static void main(String[] args) {
         int result = Max.max(3, 4);
         int max = Max.max(1, 2, 3, 4);
-        int maxThird = Max.max(9, 8, 7);
+        int maxThird = Max.max(10, 8, 7);
         System.out.println("Максимальное число из двух значений - " + result);
         System.out.println("Максимальное число из трех значений - " + max);
         System.out.println("Максимальное число из четырех значений - " + maxThird);
