@@ -51,20 +51,20 @@ public class Point {
 
     }
 
+    public void info3d() {
+        System.out.println(String.format("Point [%s, %s, %s]", this.x, this.y, this.z));
+    }
+
     public static void main(String[] args) {
         Point a = new Point(0, 0);
         Point b = new Point(0, 2);
-        Point x = new Point(0, 0, 0);
-        Point y = new Point(0, 0, 0);
-        Point z = new Point(1, 1, 1);
         Point first = new Point(0, 0, 0);
         Point second = new Point(1, 1, 1);
         double dist3d = first.distance3d(second);
         double dist = a.distance(b);
-     //   double temp = x.distance3d(y);
-     //   double dist3d = z.distance3d(y);
+        a.info();
         System.out.println("dist = " + dist);
-     //   System.out.println("temp = " + temp);
+        second.info3d();
         System.out.println("dist3d = " + dist3d);
     }
 
